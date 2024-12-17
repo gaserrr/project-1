@@ -1,0 +1,850 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+background-color: rgb(246,250,253);
+}
+.header{
+    position: fixed;
+    z-index: 200;
+    background-color: rgb(37,73,107, 0.75);
+    width: 100%;
+    height: 40px;
+    top: 0;
+}
+.header i{
+    float: left;
+    font-size: 25px;
+    color: aquamarine;
+    margin: 8px 0px 0px 10px;
+    color: rgb(246,250,253);
+}
+.search i{
+    color: rgb(22, 154, 79);
+    margin: 0;
+    font-size: 20px;
+}
+.search{
+    float: left;
+    border: 0 solid salmon;
+    height: 25px;
+    border-radius: 15px;
+    margin-top: 8px;
+    background-color: rgb(246,250,253);
+    width: 210px;
+    margin-left: 20px;
+    padding: 3px 0px 0px 5px
+}
+.search input{
+    border: 0px solid salmon;
+    color :rgb(37,73,107, 0.75)
+}
+.header li{
+    display: inline-block;
+    font: normal normal 15px Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: capitalize;
+    margin: 8px 0 0 40px;
+    color: rgb(246,250,253);
+    height: 25px;
+    position: relative;
+}
+.list:after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 10%;
+    background-color: rgb(246,250,253);
+    bottom: 0%;
+    left: 0%;
+    transition: 0.5s;
+}
+.list:hover::after{
+    width: 100%;
+    transition: 0.5s;
+}
+#first1{
+    margin-left: 500px;
+}
+.home{
+    width: 100%;
+    background-image: url(../images/clouds\ in\ sky.png);
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+.home-overlay{
+    width: 100%;
+    height: 100%;
+    background-color:rgb(198,238,255,0.6);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.home-content{
+    margin: 50vh 50vw;
+    width: 700px;
+    position: absolute;
+    z-index: 7;
+    transform: translate(-50% , -50%);
+    text-align: center;
+    color: rgb(37,73,107);
+    line-height: 50px;
+    font: normal normal 20px Verdana, Geneva, Tahoma, sans-serif;
+}
+.title{
+color: rgb(73, 94, 123);
+font: normal normal 70px Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+/* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+/* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+}
+.home-btn{
+    width: 140px;
+    height: 56px;
+    border: solid 0px rgb(255, 255, 255);
+    border-radius: 5px;
+    background-color: rgb(176,205,239);
+    color: rgb(37,73,107) ;
+    margin-top: 10px;
+    font: normal normal 18px Verdana, Geneva, Tahoma, sans-serif;
+}
+.home-btn:hover{
+    opacity: 0.5;
+}
+.home-btn2{
+    margin-left:15px;
+    background-color: rgb(37,73,107);
+    color: rgb(246,250,253);
+}
+/* //////////////////////////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////////////// */
+.first-page{
+    height: 100vh;
+    width: 100%;
+}
+.first-page-content{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+.pros-middle{
+    margin: 0px 5%;
+}
+.pros{
+    text-align: center;
+    border: 2px solid rgb(32, 37, 71);
+    line-height: 50px;
+    width: 30%;
+    height: 200px;
+    float: left;
+    padding-top: 10px;
+    text-transform: capitalize;
+    position: relative;
+    margin-top: 80px;
+}
+.pros::after{
+    content: "";
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: rgba(166,223,255, 0.5);
+    transition: 0.5s;
+}
+.pros:hover::after{
+    width: 100%;
+    height: 100%;
+    transition: 0.75s;
+}
+.line{
+    height: 4px;
+    width: 150px;
+    background-color: rgb(94,120,157);
+    margin: auto;
+}
+.pros-title{
+    font: normal bold 20px Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(73, 94, 123);
+}
+.pros:hover .pros-title{
+    color: rgb(49, 63, 82);
+}
+.pros:hover .pros-content{
+    color: rgb(88, 131, 155);
+}
+.pros:hover i{
+    color: rgb(88, 131, 155);
+}
+.head{
+font: normal bold 30px Verdana, Geneva, Tahoma, sans-serif;
+color: rgb(32, 37, 71);
+
+}
+.pros a{
+    text-decoration: none;
+    font: normal bold 14px Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(36, 71, 32);
+}
+.pros i{
+    font-size: 30px;
+    color:rgb(145, 215, 255);
+}
+.pros-content{
+    font: normal normal 16px Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(145, 215, 255);
+    margin: 10px 0px 20px 0px;
+}
+/* /////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////////////////// */
+.second-page{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    padding-top: 30px;
+}
+.second-page h2{
+    font: normal bold 30px Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(32, 37, 71);
+}
+.second-page-content{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+}
+.featured{
+    width: 30%;
+    height: 200px;
+    float: left;
+    position: relative;
+    margin-top: 30px;
+}
+.second-page-content img{
+    width: 100%;
+    height:100%;
+}
+.featured-middle{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.featured-overlay{
+    background-color: rgba(166,223,255, 0.5);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    display: none;
+}
+.featured:hover .featured-overlay{
+    display:block;
+}
+.featured-overlay h2{
+    font: normal bold 30px Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(246,250,253);
+}
+.featured-overlay p{
+    font: normal bold 20px Verdana, Geneva, Tahoma, sans-serif;
+    margin: 30px 0px;
+    text-transform: capitalize;
+    color: rgb(32, 37, 71);
+}
+.featured-overlay i{
+    font-size: 25px;
+    color: rgb(246,250,253);
+    background-color: rgb(37, 73, 107);
+    border: 5px solid rgb(37, 73, 107);
+    border-radius: 5px;
+    cursor: pointer;
+    width: 50px;
+}
+/* ///////////////////////////////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////////////////////////////// */
+.third-page{
+    width: 100%;
+    height: 100vh;
+    padding-top: 50px;
+    position: relative;
+}
+.third-page-content{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+.middle-body{
+    margin: 0px 5%;
+}
+.body{
+    text-align: center;
+    width: 30%;
+    height: 200px;
+    border: solid rgb(37, 73, 107) 2px;
+    font: normal normal 25px 'Times New Roman', Times, serif;
+    color: rgb(129, 165, 186);
+    float: left;
+    position: relative;
+    margin-top: 50px; 
+    font: normal bold 20px Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 10px;
+}
+.body i{
+    font-size: 25px;
+    color: rgb(37,73,107) ;
+}
+.start{
+    display: inline;
+    color: rgb(37,73,107);
+}
+.third-page-content h2{
+    font: normal bold 30px Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(32, 37, 71);
+}
+.body::after{
+    content: "";
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: rgba(166,223,255, 0.4);
+    transition: 0.5s;
+}
+.body:hover::after{
+    width: 100%;
+    height: 100%;
+    transition: 0.75s;
+}
+.body:hover .start{
+    color: rgb(57, 107, 137);
+}
+.body:hover .body i{
+    color: rgb(57, 107, 137);
+}
+.body-content{
+    margin-top: 20px;
+}
+.body:hover .body-content{
+    color: rgb(82, 105, 118);
+}
+/* ///////////////////////////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////////////////////////// */
+
+.forth-page{
+    width: 100%;
+    height: 150vh;
+    background-image: url(../images/sky\ 2\ \(2\).jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+.upper{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(246,250,253);
+}
+.upper-content{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    position: relative;
+    overflow: auto;
+}
+#why{
+    font: normal normal 40px Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 1.5px;
+    color: rgb(32, 37, 71);
+    display: block;
+}
+.one{
+    font: normal normal 25px Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(145, 215, 255);
+    margin: 30px 0 40px 0;
+}
+.paragraph{
+    margin-top: 20px;
+}
+.paragraph p{
+    display: inline;
+    font: normal normal 20px Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: capitalize;
+    color: rgb(145, 215, 255);
+}
+.paragraph i{
+    display: inline;
+    font-size: 20px;
+    color: rgb(145, 215, 255);
+}
+ .upper-content img{
+
+    width: 70%;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    height: 70%;
+    display: block;
+    position: absolute;
+
+}
+.paragraphs{
+    float: left;
+    position: relative;
+    width: 50%;
+    height: 90%;
+    margin-top: 50px;
+}
+.paragraphs-tiny{
+    top: 50%;
+    transform: translate(0%,-50%);
+    position: absolute;
+}
+.circles{
+    transform: translate(-50%,0%);
+    left: 50%;
+    top: 86%;
+    position: absolute;
+
+}
+.circle{
+    border: solid 0 black;
+    border-radius: 50%;
+    background-color: rgb(145, 215, 255);
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+    float: left;
+}
+.circle2, .circle3{
+   background-color: rgba(145, 215, 255, 0.5);
+}
+.circle:hover{
+    background-color: rgb(145, 215, 255);
+}
+.image{
+    float: left;
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+/* ///////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////// */
+.lower{
+    width: 100%;
+    height: 50vh;
+    position: relative;
+}
+.lower-content{
+    width: 80%;
+    height: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    overflow: auto;
+}
+.lower-parts{
+    height: 100%;
+    width: 25%;
+    float: left;
+    position: relative;
+}
+.details{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: rgb(246,250,253);
+    font: normal normal 20px  Verdana, Geneva, Tahoma, sans-serif;
+}
+.details i{
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+/* ///////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////// */
+.fifth-page{
+    height: 150vh;
+    width: 100%;
+    background-image: url(../images/clouds\ in\ sky.png);
+    background-attachment: fixed;
+    background-size: cover;
+}
+.upper2{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(246,250,253);
+    position: relative;
+    text-align: center;
+}
+.upper2-content{
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.plan{
+    float: left;
+    width: 30%;
+    border: solid 1px rgb(32, 37, 71);
+    border-radius: 10px;
+    text-align: center;
+    height: 400px;
+    position: relative;
+}
+.plan-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font: normal bold 15px Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(32, 37, 71);
+    line-height: 30px;
+    
+}
+.plan2{
+    margin: 0 5%;
+}
+.plan-btn{
+    background-color: rgb(246,250,253);
+    border: 2px solid rgb(83, 126, 186);
+    border-radius: 95px;
+    text-align: center;
+    width: 120px;
+    height: 30px;
+    font-weight: bold;
+    border-radius: 3px;
+    color: rgb(32, 37, 71);
+}
+.price{
+    border:2px solid rgb(83, 126, 186);
+    width: 130;
+    height: 130;
+    border-radius: 100px;
+    margin: auto;
+    position: relative;
+
+}
+.price-content{
+    font: normal bold 20px 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(32, 37, 71);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    line-height: 30px;
+}
+.dollar{
+    font-size: 40px;
+}
+.upper2 h2{
+    font: normal normal 50px Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(32, 37, 71);
+}
+.plan::after{
+    content: "";
+    top: 0%;
+    height: 0%;
+    width: 100%;
+    border: solid 0px saddlebrown;
+    border-radius: 10px;
+    position: absolute;
+    background-color: rgba(32, 134, 174, 0.5);
+    transform: translate(-50%,0%);
+    transition: 1s;
+}
+.plan:hover::after{
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+}
+.plan:hover .price{
+    border: solid 2px rgb(83, 126, 186);
+}
+.plan1 .plan-content{
+    margin-top: -10px;
+}
+/* //////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////// */
+.lower2{
+    height: 50vh;
+    width: 100%;
+    position: relative;
+}
+.lower2-content{
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    overflow: auto;
+}
+.half{
+    width: 50%;
+    float: left;
+    padding-left: 20px;
+}
+.half img{
+    width: 80px;
+    height: 80px;
+    border: 0px saddlebrown solid;
+    border-radius: 50%;
+}
+.id{
+    position: absolute;
+    margin-left: 110px;
+    top: 0%;
+    font: normal normal 25px Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(246,250,253);
+    text-transform: capitalize;
+}
+.describtion{
+    margin-top: 5px;
+    font: normal normal 16px Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(32, 37, 71);
+}
+.name{
+    font: normal normal 30px Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+/* ///////////////////////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////////////////////// */
+.sixth-page{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    
+}
+.top {
+    font: normal normal 30px Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(32, 37, 71);
+    text-align: center;
+}
+.sixth-page-content{
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+}
+.individual{
+    width: 30%;
+    height: 350px;
+    background-color: rgb(198, 238, 255);
+    position: relative;
+    float: left;
+    border: solid saddlebrown 0px;
+    border-radius: 15px;
+}
+.individual-content{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    text-align: center;
+}
+.individual-image{
+position: relative;
+}
+.individual-image img{
+    width: 300px;
+    height: 240px;
+}
+.individual-icons{
+    display: none;
+    background-color: rgb(50, 52, 86);
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 100px;
+}
+.individual-icons i{
+    font-size: 18px;
+    color: rgb(246,250,253);
+    margin-top: 11px;
+}
+.individual2{
+    margin: 0 5%;
+}
+.name2, .job2{
+    font: normal bold 20px Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(32, 37, 71);
+    margin-top: 10px;
+    text-transform: capitalize;
+}
+.job2{
+    color: gray;
+    font-weight: normal;
+    font-size: 18px;
+}
+.individual::after{
+    content: "";
+    width: 100%;
+    height: 0;
+    position: absolute;
+    background-color: rgb(129, 165, 186, 0.5);
+    transition: 0.5s;
+    border: solid saddlebrown 0px;
+    border-radius: 15px;
+}
+.individual:hover::after{
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+.individual:hover .individual-icons{
+    display: block;
+}
+/* ////////////////////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////////////////// */
+.final-page{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+.final-page-content{
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+}
+.employee{
+    width: 30%;
+    float: left;
+    position: relative;
+    height: 500px;
+    border: solid rgb(83, 126, 186) 1px;
+    border-radius: 10px;
+
+}
+.employee2{
+    margin: 0px 5%;
+}
+.employee-content img{
+    width: 250px;
+    height: 250px;
+    border: 0px solid saddlebrown;
+    border-radius: 10px;
+}
+.employee-content{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    text-align: center;
+    width: 250px;
+}
+.account p, .account i{
+display: inline-block;
+}
+.account i{
+    color: rgb(83, 126, 186);
+}
+.account{
+    float: left;
+    font: normal normal 15px Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 10px;
+}
+.linked{
+    margin: 0 20px;
+}
+.facebook{
+    margin-left: 15px;
+}
+.employee-title{
+    font: normal bold 18px Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: capitalize;
+    color: rgb(32, 37, 71);
+    margin-bottom: 20px;
+}
+.employee-describtion{
+    font: normal normal 16px Verdana, Geneva, Tahoma, sans-serif;
+    color: gray;
+}
+.employee::after{
+    content: "";
+    width: 100%;
+    height: 0%;
+    top: 0;
+    position: absolute;
+    z-index: -1;
+    background-color: rgba(166,223,255, 0.8);
+    transition: 1s;
+    border: solid saddlebrown 0px;
+    border-radius: 10px;
+}
+.employee:hover::after{
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+}
+.employee:hover .employee-title{
+    color: white;
+}
+.employee:hover .employee-describtion{
+    color: rgb(32, 37, 71);
+}
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.footer{
+    height: 50vh;
+    width: 100%;
+    background-color: rgb(22, 26, 50);
+    position: relative;
+}
+.footer-content{
+position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50%,-50%);
+width: 80%;
+text-align: center;
+}
+.footer-content img{
+    width: 250px;
+    height: 220px;
+    border: saddlebrown solid 0px;
+    border-radius: 5px;
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+}
+.icons{
+    margin: auto;
+    overflow: auto;
+    
+}
+.icon{
+    display: inline-block;
+    margin-left: 5px;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(145, 215, 255);
+    opacity: 0.5;
+    border: saddlebrown solid 0px;
+    border-radius: 50%;
+    position: relative;
+}
+.center{
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+}
+.center i{
+    font-size: 30px;
+    color: rgb(246,250,253);
+}
+.icon:hover{
+    opacity: 1;
+}
+.footer-content p{
+    font: normal bold 13px Verdana, Geneva, Tahoma, sans-serif;
+    color: rgba(246,250,253, 0.5);
+
+}
